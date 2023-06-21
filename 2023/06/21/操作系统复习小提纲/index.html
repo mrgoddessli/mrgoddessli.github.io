@@ -1,0 +1,560 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>操作系统复习小提纲 | MrGoddess's Little house</title><meta name="author" content="MrGoddess"><meta name="copyright" content="MrGoddess"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="10.4 前四章复(yu)习(xi)前四章还没讲到操作系统 &#x3D;&#x3D;目录：&#x3D;&#x3D; 第一章 计算机体系架构  图灵机	2. 电子计算机的诞生	3. 存储程序计算机	4. 指令级架构  第二章 程序设计 ​	1. 一个简单的程序	2. 内存访问	3. 外存访问 	4. 子程序设计	5. 运行栈	6. 程序设计语言	7. 程序的链接 第三章 程序的运行 ​	1. 程序的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="操作系统复习小提纲">
+<meta property="og:url" content="http://example.com/2023/06/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E5%B0%8F%E6%8F%90%E7%BA%B2/index.html">
+<meta property="og:site_name" content="MrGoddess&#39;s Little house">
+<meta property="og:description" content="10.4 前四章复(yu)习(xi)前四章还没讲到操作系统 &#x3D;&#x3D;目录：&#x3D;&#x3D; 第一章 计算机体系架构  图灵机	2. 电子计算机的诞生	3. 存储程序计算机	4. 指令级架构  第二章 程序设计 ​	1. 一个简单的程序	2. 内存访问	3. 外存访问 	4. 子程序设计	5. 运行栈	6. 程序设计语言	7. 程序的链接 第三章 程序的运行 ​	1. 程序的">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/img1.png">
+<meta property="article:published_time" content="2023-06-21T14:22:07.000Z">
+<meta property="article:modified_time" content="2023-06-21T14:27:26.989Z">
+<meta property="article:author" content="MrGoddess">
+<meta property="article:tag" content="notes">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/img1.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/06/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E5%B0%8F%E6%8F%90%E7%BA%B2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#29afd4","bgDark":"#a4abd6","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '操作系统复习小提纲',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-21 22:27:26'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas  fa-bangumi"></i><span> Bilibili</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="MrGoddess's Little house"><span class="site-name">MrGoddess's Little house</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/bangumis/"><i class="fa-fw fas  fa-bangumi"></i><span> Bilibili</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">操作系统复习小提纲</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-06-21T14:22:07.000Z" title="发表于 2023-06-21 22:22:07">2023-06-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-21T14:27:26.989Z" title="更新于 2023-06-21 22:27:26">2023-06-21</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="操作系统复习小提纲"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><h1 id="10-4-前四章复-yu-习-xi"><a href="#10-4-前四章复-yu-习-xi" class="headerlink" title="10.4 前四章复(yu)习(xi)"></a>10.4 前四章复(yu)习(xi)</h1><p>前四章还没讲到操作系统</p>
+<p>&#x3D;&#x3D;目录：&#x3D;&#x3D;</p>
+<p>第一章 <strong>计算机体系架构</strong></p>
+<ol>
+<li>图灵机	2. 电子计算机的诞生	3. 存储程序计算机	4. 指令级架构</li>
+</ol>
+<p>第二章 <strong>程序设计</strong></p>
+<p>​	1. 一个简单的程序	2. 内存访问	3. 外存访问 	4. 子程序设计	5. 运行栈	6. 程序设计语言	7. 程序的链接</p>
+<p>第三章 <strong>程序的运行</strong></p>
+<p>​	1. 程序的装入	2. 程序的执行	3. 中断响应	4. 运行时系统	5. 系统调用	6. 程序的终止</p>
+<p>第四章 <strong>操作系统发展与形成</strong></p>
+<ol>
+<li>操作系统之前的人机交互	2. 批处理	3. 脱机输入输出	4. 多任务	5. 分时	6. 操作系统概念的形成	7. 操作系统内核	8. 内核之外	9. 操作系统结构	10. 操作系统的研发	11. 操作系统的安装与引导</li>
+</ol>
+<p>第五章 <strong>CPU管理</strong></p>
+<p>​	1. 程序运行过程的描述	2. 多线程进程	3. 进程创建与撤销	4. CPU调度	5. CPU调度算法	6. 上下文切换	7. 进程通信</p>
+<p>大概：</p>
+<ol>
+<li>计算机体系架构（的发展历史）</li>
+<li>程序设计（汇编原理层面上）</li>
+<li>程序的运行（启动、运行、中断处理，其他软件的支持等）</li>
+<li>操作系统的形成与发展（正式引入操作系统。<strong>我们并没有直接和操作系统打交道，而是通过程序与其打交道——操作系统就是为&#x3D;&#x3D;应用程序&#x3D;&#x3D;提供一个&#x3D;&#x3D;运行平台&#x3D;&#x3D;</strong></li>
+<li>操作系统可以&#x3D;&#x3D;管理&#x3D;&#x3D;以下内容（&#x3D;&#x3D;<strong>重点</strong>&#x3D;&#x3D;）：<ol>
+<li>CPU管理（第五章）</li>
+<li>内存管理（第六章）</li>
+<li>输入输出子系统（第七章）</li>
+<li>文件系统（第八章）</li>
+</ol>
+</li>
+<li>同步与互斥（新的特点，之前的程序都是顺序运行，没有考虑到程序之间的合作与干扰）</li>
+<li>死锁（新特点）</li>
+</ol>
+<h2 id="第一章-计算机体系架构（如今计算机体系架构逐渐发展起来的历史）"><a href="#第一章-计算机体系架构（如今计算机体系架构逐渐发展起来的历史）" class="headerlink" title="第一章. 计算机体系架构（如今计算机体系架构逐渐发展起来的历史）"></a>第一章. 计算机体系架构（如今计算机体系架构逐渐发展起来的历史）</h2><h3 id="1-图灵机"><a href="#1-图灵机" class="headerlink" title="1. 图灵机"></a>1. 图灵机</h3><p>​	图灵把人的计算过程进行了形式化的描述，从而以此为基础设计计算机。</p>
+<p>​	&#x3D;&#x3D;图灵机&#x3D;&#x3D;架构：<strong>存储带</strong>（纸带，用于输入输出），<strong>读写头</strong>（执行左移或者右移，判断读还是写操作），状态寄存器（保存当前状态），<strong>控制规则表</strong>（相当于一个程序，根据当前状态和读写头内容来决定新状态）</p>
+<p>​	例子：&#x3D;&#x3D;一进制加法&#x3D;&#x3D;（详见ppt）</p>
+<p>​	通用图灵机：将任意图灵机的输出和输入都能作为输入</p>
+<h3 id="2-电子计算机的诞生"><a href="#2-电子计算机的诞生" class="headerlink" title="2. 电子计算机的诞生"></a>2. 电子计算机的诞生</h3><p>​	三个计算机</p>
+<p>​	&#x3D;&#x3D;阿塔纳索夫-贝利 计算机&#x3D;&#x3D;：第一台电子，全部用电子器件执行，用二进制运算，<strong>没有CPU，不可编程，不是图灵完备</strong></p>
+<p>​	&#x3D;&#x3D;埃尼阿克计算机（ENIAC）&#x3D;&#x3D;：第一台通用，算法硬化到机器，但是可以编程（重新链接线路），图灵完备</p>
+<p>​	&#x3D;&#x3D;UNIVAC I（通用自动计算机）&#x3D;&#x3D;：第一台<strong>商用</strong>的</p>
+<h3 id="3-存储程序计算机"><a href="#3-存储程序计算机" class="headerlink" title="3. 存储程序计算机"></a>3. 存储程序计算机</h3><p>​	&#x3D;&#x3D;冯诺依曼&#x3D;&#x3D;👍👍👍👍👍👍</p>
+<p>​	第一台存储程序架构计算机&#x3D;&#x3D;EDSAC&#x3D;&#x3D;</p>
+<p>​	照亮了工业化道路，软件与硬件分离</p>
+<p>​	操作系统的功能：<strong>装入程序，管理软件与应用</strong></p>
+<p>​	装入程序，为什么要装入？</p>
+<ol>
+<li>程序和数据都在外存中，需要装入内存</li>
+<li>内存一般是容易丢失的，必须运行前装入</li>
+</ol>
+<h3 id="4-指令集架构"><a href="#4-指令集架构" class="headerlink" title="4. 指令集架构"></a>4. 指令集架构</h3><p>​	不可编程的计算机：完全不行，重新造</p>
+<p>​	可编程的计算机：修改程序需要修改电路或者重新装配，太麻烦</p>
+<p>​	存储程序计算机：程序和数据放在存储器，成为软件👍程序猿软硬件分离👍软硬件之间需要一个界面——&#x3D;&#x3D;指令集架构ISA&#x3D;&#x3D;</p>
+<p>​	<strong>指令集架构 Instruction Set Architecture</strong></p>
+<p>基本设计：</p>
+<ol>
+<li>操作数保存——寄存器，主存，栈，累加器等</li>
+<li>操作数个数——0,1,2,3</li>
+<li>寻址方式——寄存器寻址，立即数寻址，间接寻址等</li>
+<li>操作类型——加法减法乘法，位移等</li>
+<li>访问外设的方式</li>
+<li>…</li>
+</ol>
+<h4 id="ISA的发展"><a href="#ISA的发展" class="headerlink" title="ISA的发展"></a>ISA的发展</h4><ol>
+<li>图灵机，简单的指令集，如读&#x2F;写纸带，左&#x2F;右移动</li>
+<li>EDSAC计算机中，有14条指令，包含了算术运算、逻辑运算、转移、传送等指令，是图灵完备的</li>
+<li>CISC——complex，复杂指令计算机，尽量使用硬件来实现功能，代表：&#x3D;&#x3D;X86&#x3D;&#x3D;，<strong>Intel和AMD都是生产x86架构的CPU</strong></li>
+<li>RISC——reduced，精简指令集计算机，降低指令数量，以软件来实现复杂功能。代表：&#x3D;&#x3D;ARM，MIPS，RISC-V&#x3D;&#x3D;</li>
+</ol>
+<h4 id="RISC-V"><a href="#RISC-V" class="headerlink" title="RISC-V"></a>RISC-V</h4><p>​	结构简单，&#x3D;&#x3D;完全开源&#x3D;&#x3D;，正方兴未艾</p>
+<h4 id="特权指令"><a href="#特权指令" class="headerlink" title="特权指令"></a>特权指令</h4><p>内核模式下才能执行的指令，能对系统中的某些关键资源进行操作</p>
+<h2 id="第二章-程序设计"><a href="#第二章-程序设计" class="headerlink" title="第二章 程序设计"></a>第二章 程序设计</h2><h3 id="1-一个简单的程序"><a href="#1-一个简单的程序" class="headerlink" title="1. 一个简单的程序"></a>1. 一个简单的程序</h3><img src="/2023/06/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E5%B0%8F%E6%8F%90%E7%BA%B2/image-20221004112206260.png" class="" title="image-20221004112206260">
+
+<img src="/2023/06/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E5%B0%8F%E6%8F%90%E7%BA%B2/image-20221004112222850.png" class="" title="image-20221004112222850">
+
+
+
+<p>这段代码是用&#x3D;&#x3D;汇编语言&#x3D;&#x3D;写的</p>
+<table>
+<thead>
+<tr>
+<th>行数</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>01</td>
+<td>“#”开始，说明是注释，在0号地址开始（begins at address 0)</td>
+</tr>
+<tr>
+<td>02</td>
+<td>“.”开头的是伪指令（不会出现在可执行代码中），.pos 0表示当前位置往后的指令装到0号单元开始的位置上</td>
+</tr>
+<tr>
+<td>03</td>
+<td>iremovq 传送指令，<code>iremovq stack %rsp</code>将stack传送给rsp，设置一个栈指针（stack pointer）。&#x3D;&#x3D;stack&#x3D;&#x3D;是一个标识符，其值是他所在的位置对应的内存</td>
+</tr>
+<tr>
+<td>04</td>
+<td><code>call main</code>调用main函数</td>
+</tr>
+<tr>
+<td>05</td>
+<td><code>halt</code>停机，可以理解为<strong>返回操作系统</strong></td>
+</tr>
+<tr>
+<td>06</td>
+<td></td>
+</tr>
+<tr>
+<td>07</td>
+<td>注释：4个元素的数组</td>
+</tr>
+<tr>
+<td>08</td>
+<td><code>align 8</code>数组的名字就是数组的地址</td>
+</tr>
+<tr>
+<td>09</td>
+<td>&#x3D;&#x3D;array:&#x3D;&#x3D;</td>
+</tr>
+<tr>
+<td>10</td>
+<td><code>.quad 0x000d000d000d</code></td>
+</tr>
+<tr>
+<td>11</td>
+<td>…</td>
+</tr>
+<tr>
+<td>12</td>
+<td>…</td>
+</tr>
+<tr>
+<td>13</td>
+<td>…</td>
+</tr>
+<tr>
+<td>14</td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>&#x3D;&#x3D;main：&#x3D;&#x3D;</td>
+</tr>
+<tr>
+<td>16</td>
+<td><code>irmovq array,%rdi</code>把array数组放入rdi寄存器（起始地址）</td>
+</tr>
+<tr>
+<td>17</td>
+<td><code>irmovq $4,%rsi</code>把4放入rsi（元素数量）</td>
+</tr>
+<tr>
+<td>18</td>
+<td>call sum 调用子程序&#x3D;&#x3D;#call sum(array,4)&#x3D;&#x3D;</td>
+</tr>
+<tr>
+<td>19</td>
+<td>&#x3D;&#x3D;ret&#x3D;&#x3D;返回指令</td>
+</tr>
+<tr>
+<td>20</td>
+<td></td>
+</tr>
+<tr>
+<td>21</td>
+<td>#long sum(long *start, long count)</td>
+</tr>
+<tr>
+<td>22</td>
+<td>#start is rdi, count is rsi</td>
+</tr>
+<tr>
+<td>23</td>
+<td>&#x3D;&#x3D;sum:&#x3D;&#x3D;</td>
+</tr>
+<tr>
+<td>24</td>
+<td></td>
+</tr>
+<tr>
+<td>25</td>
+<td></td>
+</tr>
+<tr>
+<td>26</td>
+<td>&#x3D;&#x3D;xorq %rax，%rax&#x3D;&#x3D;相当于把rax清零</td>
+</tr>
+<tr>
+<td>27</td>
+<td></td>
+</tr>
+<tr>
+<td>28</td>
+<td></td>
+</tr>
+<tr>
+<td>29</td>
+<td></td>
+</tr>
+<tr>
+<td>30</td>
+<td></td>
+</tr>
+<tr>
+<td>31</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>在进入<strong>main</strong>函数之前还有一段函数，在main中调用子程序<strong>sum</strong></p>
+<p>call 指令调用函数，两个功能：</p>
+<ol>
+<li>call main把main的返回地址（halt指令）压到栈里面</li>
+<li>call sum把sum的返回地址（ret指令）压到栈中</li>
+</ol>
+<p>&#x3D;&#x3D;<strong>有空再仔细看看ppt</strong>&#x3D;&#x3D;</p>
+<h3 id="2-内存访问"><a href="#2-内存访问" class="headerlink" title="2. 内存访问"></a>2. 内存访问</h3><p>存储器：<strong>外存</strong>最大但是也最慢，<strong>寄存器</strong>最快但是最小，内存中等</p>
+<p>寄存器用于CPU&#x3D;&#x3D;运算&#x3D;&#x3D;，内存用于CPU&#x3D;&#x3D;直接访问&#x3D;&#x3D;，外存（磁盘、U盘）用于CPU&#x3D;&#x3D;间接访问&#x3D;&#x3D;</p>
+<p>因为数据的分布基于&#x3D;&#x3D;局部性&#x3D;&#x3D;，大部分的程序和数据都不是常用的，常用的总归是少数</p>
+<h4 id="物理地址"><a href="#物理地址" class="headerlink" title="物理地址"></a>物理地址</h4><ol>
+<li>&#x3D;&#x3D;内存&#x3D;&#x3D;由一系列的内存单元组成，这些内存单元按照顺序编号（从0开始，连续的，线性的）</li>
+<li>CPU通过这个编号访问内存单元，&#x3D;&#x3D;这个编号&#x3D;&#x3D;成为物理地址</li>
+<li>物理地址是送到&#x3D;&#x3D;内存地址总线&#x3D;&#x3D;上的地址</li>
+</ol>
+<p><strong>&#x3D;&#x3D;绝对代码&#x3D;&#x3D;</strong></p>
+<p>​	使用的地址是&#x3D;&#x3D;物理地址&#x3D;&#x3D;，程序绑定在硬件上</p>
+<p>​	生成方式：程序员编写，编译程序生成，汇编程序生成</p>
+<p>​	特点：简单，直观；^剩下的感觉都是劣势：^需要程序猿（编译程序）对硬件非常了解；不能跨平台，需要更新；程序独占全机内存；在多任务上的问题，需要分享内存，有<strong>安全性问题</strong>，<strong>系统分配内存</strong>，<strong>程序无法确定自己的内存位置</strong></p>
+<h4 id="虚拟地址与虚拟地址空间"><a href="#虚拟地址与虚拟地址空间" class="headerlink" title="虚拟地址与虚拟地址空间"></a>虚拟地址与虚拟地址空间</h4><p><strong>&#x3D;&#x3D;MMU：内存管理单元（硬件）&#x3D;&#x3D;</strong></p>
+<p>通过硬件操作（速度比较快）将程序中的地址转变为物理地址</p>
+<p><strong>虚拟地址：</strong>在程序中使用的是虚拟地址（自己看来地址从0开始），也是CPU从指令中解析出来的地址</p>
+<p>&#x3D;&#x3D;操作系统是内存（整个物理空间）的<strong>管理者</strong>，每个程序都需要操作系统来分配空间&#x3D;&#x3D;</p>
+<p>指令执行过程中进行的地址变换，是一个&#x3D;&#x3D;硬件过程&#x3D;&#x3D;，但是映射关系是由&#x3D;&#x3D;操作系统&#x3D;&#x3D;确定的</p>
+<h4 id="重定位：修改地址——是将程序内需要的地址进行修改"><a href="#重定位：修改地址——是将程序内需要的地址进行修改" class="headerlink" title="重定位：修改地址——是将程序内需要的地址进行修改"></a>重定位：修改地址——是将程序内需要的地址进行修改</h4><img src="/2023/06/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E5%B0%8F%E6%8F%90%E7%BA%B2/image-20221004193933973.png" class="" title="image-20221004193933973">
+
+<p>比如例子中500地址变成了10500地址</p>
+<p><strong>静态重定位</strong>：运行前进行的，比较耗时；装入时就确定了程序的位置，而且执行中是固定的不能更改的。&#x3D;&#x3D;不需要MMU，而是操作系统利用软件方法进行重定位&#x3D;&#x3D;</p>
+<p><strong>动态重定位：</strong>执行过程中进行的，&#x3D;&#x3D;需要有硬件支持&#x3D;&#x3D;（基地址寄存器base，限长寄存器limit，&#x3D;&#x3D;MMU&#x3D;&#x3D;）</p>
+<h3 id="3-外存访问"><a href="#3-外存访问" class="headerlink" title="3. 外存访问"></a>3. 外存访问</h3><h4 id="IO设备"><a href="#IO设备" class="headerlink" title="IO设备"></a>IO设备</h4><p>字符&#x2F;块 设备：随机&#x2F;顺序，是&#x2F;否按照地址访问</p>
+<p>&#x3D;&#x3D;随机访问就是按地址访问&#x3D;&#x3D;，比如数组a[5],a[10],按照地址进行随机的访问，而顺序访问不行，比如<strong>链表</strong></p>
+<h4 id="设备控制器"><a href="#设备控制器" class="headerlink" title="设备控制器"></a>设备控制器</h4><p>​	基本组成：总线缓冲器，IO端口，设备选择，控制逻辑等</p>
+<p>​	端口就是一个设备的地址，有连接CPU，数据缓冲，状态数据，控制命令等命令。</p>
+<p>​	IO接口的意义：输入输出标准化，计算和输入输出<strong>并行</strong>。</p>
+<h4 id="设备的地址"><a href="#设备的地址" class="headerlink" title="设备的地址"></a>设备的地址</h4><p>独立编址：IO指令的一般形式：操作码（in&#x2F;out）+数据+端口地址</p>
+<p>统一编址：将端口看做内存单元，与内存单元统一编制。这样CPU访问端口就像访问内存一样，不需要为CPU增加新的输入输出指令了</p>
+<h4 id="设备控制方式"><a href="#设备控制方式" class="headerlink" title="设备控制方式"></a>设备控制方式</h4><p>​	<strong>&#x3D;&#x3D;轮询：&#x3D;&#x3D;<strong>一段循环程序，不听的检测</strong>控制器</strong>的<strong>某个显示设备状态</strong>的端口，直到发现外设工作完成</p>
+<p>​	**&#x3D;&#x3D;中断：&#x3D;&#x3D;**外设完成后向CPU发送信号，然后执行中断处理</p>
+<p>​	**&#x3D;&#x3D;DMA：&#x3D;&#x3D;**减少中断次数，直接访问内存，但是CPU就无法执行其他工作了</p>
+<h4 id="驱动程序：直接控制设备的程序"><a href="#驱动程序：直接控制设备的程序" class="headerlink" title="驱动程序：直接控制设备的程序"></a>驱动程序：直接控制设备的程序</h4><p>驱动程序属于&#x3D;&#x3D;操作系统&#x3D;&#x3D;的一部分 &#x3D;^ . ^&#x3D;</p>
+<ol>
+<li>驱动程序是设备相关的，依赖于设备的</li>
+<li>其他程序（应用程序）设备无关，不依赖设备</li>
+</ol>
+<h3 id="4-子程序设计"><a href="#4-子程序设计" class="headerlink" title="4. 子程序设计"></a>4. 子程序设计</h3><p><strong>基本问题</strong>：</p>
+<ol>
+<li>调用前：&#x3D;&#x3D;参数传递、保存返回地址&#x3D;&#x3D;</li>
+<li>转移：转移到子程序的第一条指令处（子程序的入口）</li>
+<li>执行</li>
+<li>返回：主程序中调用子函数的指令的下一条指令</li>
+<li>调用规范：子程序调用过程是由一组操作在调用点按照特定的调用规范完成的</li>
+</ol>
+<p>&#x3D;&#x3D;<strong>早期实现</strong>&#x3D;&#x3D;：</p>
+<ol>
+<li>将返回地址放到调用规范规定的位置（比如子程序第一条指令的前面<strong>预留空单元，保存返回地址</strong>），这样子程序就知道返回地址的位置（自己已经保存好了），然后通过&#x3D;&#x3D;链式结构&#x3D;&#x3D;（电泳就形成一条链式结构，原路返回即可）</li>
+<li>&#x3D;&#x3D;call&#x3D;&#x3D;指令，有专门的寄存器存放返回地址——缺点：无法进行递归，因为寄存器的返回地址内容会被覆盖。</li>
+</ol>
+<p><strong>&#x3D;&#x3D;如今：子程序库&#x3D;&#x3D;</strong></p>
+<p>​	公用的，抽象的</p>
+<p>​	有<strong>标准接口</strong>：&#x3D;&#x3D;应用程序接口（API）&#x3D;&#x3D;，平时以库程序文件的形式单独存放，使用时与用户程序&#x3D;&#x3D;链接&#x3D;&#x3D;</p>
+<h3 id="5-运行栈"><a href="#5-运行栈" class="headerlink" title="5. 运行栈"></a>5. 运行栈</h3><h4 id="x3D-x3D-运行栈-x3D-x3D"><a href="#x3D-x3D-运行栈-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;运行栈&#x3D;&#x3D;"></a>&#x3D;&#x3D;运行栈&#x3D;&#x3D;</h4><p>之前说道，call指令用寄存器储存返回地址会被覆盖，所以解决方法是：&#x3D;&#x3D;<strong>用运行栈保存返回地址</strong>&#x3D;&#x3D;——进入子程序，返回地址入栈；退出子程序，返回地址出栈</p>
+<p>&#x3D;&#x3D;<strong>栈帧</strong>&#x3D;&#x3D;（stack frame）：为每个子程序在栈内分配的数据结构</p>
+<p>储存有：</p>
+<ol>
+<li><strong>传递给子程序的参数</strong>，栈帧形成了调用者与被调用者之间的数据通道</li>
+<li><strong>返回地址</strong></li>
+<li>局部运行环境，如<strong>局部变量，寄存器的内容</strong>等</li>
+</ol>
+<p>栈帧链：子程序的嵌套调用</p>
+<p>​	每调用一次子程序，就会为该子程序分配一个栈帧，子程序返回后就会<strong>释放</strong>栈帧。父子程序的栈帧之间会形成<strong>链表，即栈帧链</strong></p>
+<p>^10月4号23:26^</p>
+<p>总而言之，每调用一次子程序，就会分配一块栈帧。</p>
+<p>BP（或者叫EBP）是底部（高地址，一般画在上边），SP（或者叫ESP）是顶部（低地址，在下边，从这里删除或者添加数据）。</p>
+<p>调用函数时，为子函数创建栈帧，接下来的都放进子函数栈帧里：如果有参数传递，先放&#x3D;&#x3D;传递给子函数的参数&#x3D;&#x3D;，然后是&#x3D;&#x3D;主函数的地址&#x3D;&#x3D;，再是&#x3D;&#x3D;主函数的底部帧指针（基指针）EBP&#x3D;&#x3D;，然后是&#x3D;&#x3D;局部变量&#x3D;&#x3D;，最后是&#x3D;&#x3D;esp&#x3D;&#x3D;</p>
+<h3 id="6-程序设计语言"><a href="#6-程序设计语言" class="headerlink" title="6. 程序设计语言"></a>6. 程序设计语言</h3><h4 id="机器语言、汇编语言、高级语言"><a href="#机器语言、汇编语言、高级语言" class="headerlink" title="机器语言、汇编语言、高级语言"></a>机器语言、汇编语言、高级语言</h4><p>&#x3D;&#x3D;<strong>机器语言</strong>&#x3D;&#x3D;：硬件能直接理解的语言，ISA为程序猿提供的面向硬件的程序设计语言，形式：<strong>二进制代码</strong></p>
+<p>机器语言是软件与硬件的界面，CPU的好用程度很大程度取决于其提供的机器语言（例如有没有push和pop指令）</p>
+<p><strong>&#x3D;&#x3D;汇编语言&#x3D;&#x3D;：</strong>用&#x3D;&#x3D;标识符&#x3D;&#x3D;代替二进制编码，更容易理解、记忆和识别。汇编语言几乎和机器语言&#x3D;&#x3D;一一对应&#x3D;&#x3D;，编程风格和技术也没有本质的改进。提供了&#x3D;&#x3D;伪指令&#x3D;&#x3D;。</p>
+<p>&#x3D;&#x3D;<strong>高级语言</strong>&#x3D;&#x3D;：独立于计算机，由专门的程序（编译程序，解释程序）转换为机器代码。</p>
+<h4 id="代码转换"><a href="#代码转换" class="headerlink" title="代码转换"></a>代码转换</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph</span><br><span class="line">a[高级语言程序]---编译--&gt;b[汇编语言程序]</span><br><span class="line">b---汇编--&gt;c[机器代码]</span><br><span class="line">a--解释----&gt;c</span><br></pre></td></tr></table></figure>
+
+<p><strong>编译</strong>：静态的。一次编译，多次运行</p>
+<p><strong>解释</strong>：动态的。每次运行都要编译，和运行平台有关系</p>
+<p>JIT编译（<strong>Just-In-Time compilation</strong>）</p>
+<p>动态、编译（中间码&#x3D;&#x3D;》机器码）</p>
+<h4 id="运行时系统-VS-程序库"><a href="#运行时系统-VS-程序库" class="headerlink" title="运行时系统 VS 程序库"></a>运行时系统 VS 程序库</h4><p><strong>运行时系统</strong>（<strong>runtime</strong>）</p>
+<p>​	编译程序不仅要把程序语句翻译成机器代码，还要为程序的运行提供一定的&#x3D;&#x3D;管理工作&#x3D;&#x3D;，这部分代码就是所谓的&#x3D;&#x3D;运行时系统&#x3D;&#x3D;</p>
+<p><strong>程序库</strong></p>
+<p>​	普通的程序库：程序主动调用，来完成某些用户的意图</p>
+<p>​	运行时系统：对程序的运行起支持作用，不是用户程序主动调用的</p>
+<h4 id="脚本语言"><a href="#脚本语言" class="headerlink" title="脚本语言"></a>脚本语言</h4><p>​	解释语言（shell，html等）</p>
+<p>​	脚本程序语句更像是一条条指令，脚本程序就是将一组命令打包在一个文件中，一条条执行命令</p>
+<h3 id="7-程序的链接"><a href="#7-程序的链接" class="headerlink" title="7. 程序的链接"></a>7. 程序的链接</h3><p>模块化程序设计——程序功能划分为独立部分，每个部分完成一个独立的功能。</p>
+<p>大型程序的组织形式：程序和数据分散在若干文件中，每个程序文件包含若干子程序和全局变量，看做一个模块。还可以放在不同子目录下。</p>
+<p><strong>模块设计：</strong></p>
+<p>首先进行划分，然后基于接口，仅考虑模块自身进行设计。每个模块都有编译的必要性，但是带哪个模块不能运行，必须将所有模块连接起来才能生成可执行文件。</p>
+<p>编译时，符号名被赋予一个地址，即在目标文件地址空间中的偏移量。连接时，符号名的地址即&#x3D;&#x3D;模块的起始地址+该符号的偏移地址&#x3D;&#x3D;</p>
+<p>&#x3D;&#x3D;<strong>地址回填</strong>&#x3D;&#x3D;</p>
+<p>链接要做的就是在引用的地方填上&#x3D;&#x3D;新地址&#x3D;&#x3D;，可以通过&#x3D;&#x3D;链表法和间接地址法&#x3D;&#x3D;</p>
+<p><strong>链表法</strong></p>
+<p>建一个链表，记住所有引用的位置，地址确定后回填</p>
+<p><strong>间接地址法</strong></p>
+<p>一个储存单元，存放x地址，对x引用时，间接访问该单元，地址确定后，回填该单元即可。</p>
+<p><strong>&#x3D;&#x3D;链接的时机&#x3D;&#x3D;</strong></p>
+<p><strong>静态链接</strong></p>
+<p>程序运行前就全部链接起来，<strong>问题：</strong>可执行文件复制了所有程序，任何程序更新都需要重新链接，不能程序共享。</p>
+<p><strong>动态链接</strong></p>
+<p>推迟到不得不链接的时候才去链接，即&#x3D;&#x3D;使用某模块时再去链接&#x3D;&#x3D;</p>
+<p><strong>&#x3D;&#x3D;可执行文件&#x3D;&#x3D;</strong></p>
+<p>由多个部分（节，section）组成，目标文件合并而来，方便装入程序。包含有代码和常量（只读）</p>
+<p><strong>可执行文件包含：初始化的全程数据</strong></p>
+<p><strong>不包含：栈、未初始化的数据</strong></p>
+<table>
+<thead>
+<tr>
+<th>目标文件结构(节为单位)</th>
+<th>可执行文件结构（段为单位）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ELF文件头表(Header table)</td>
+<td>ELF文件头表</td>
+</tr>
+<tr>
+<td>节头表(Section header table)</td>
+<td>节头表</td>
+</tr>
+<tr>
+<td></td>
+<td>程序头表(Program header table)</td>
+</tr>
+</tbody></table>
+<p>目标文件结构(&#x3D;&#x3D;节&#x3D;&#x3D;为单位) </p>
+<p>可执行文件结构（&#x3D;&#x3D;段&#x3D;&#x3D;为单位，<strong>段是相似节的合并</strong>，仅在可执行文件中）</p>
+<p>^10月6号21:11^</p>
+<h2 id="第三章-程序的运行"><a href="#第三章-程序的运行" class="headerlink" title="第三章 程序的运行"></a>第三章 程序的运行</h2><h3 id="1-程序的装入"><a href="#1-程序的装入" class="headerlink" title="1. 程序的装入"></a>1. 程序的装入</h3><p>将程序&#x3D;&#x3D;装入&#x3D;&#x3D;到可执行文件中，然后进行程序的&#x3D;&#x3D;链接&#x3D;&#x3D;</p>
+<p>可执行文件的作用：</p>
+<p>​	存放代码和数据（其中代码和数据并不是运行的状态，需要经过“<strong>装入</strong>”操作，即<strong>在内存中展开成工作时的模样</strong>才能运行。之所以不直接按照工作模样储存，目的是为了&#x3D;&#x3D;节省储存空间&#x3D;&#x3D;）</p>
+<p>&#x3D;&#x3D;装入&#x3D;&#x3D;：最早是装入物理内存</p>
+<p>​	现在是指</p>
+<ol>
+<li>把程序装入虚拟地址空间，仅仅是规划，没有真的装入物理地址空间（但是规划了就认为已经装进去了，可以运行了）</li>
+<li>运行时装入物理内存，哪里有空放那里。每个程序都有一个<strong>内存映像</strong>，每个程序在物理内存都有一个映射，但是CPU取出来的时候是虚拟地址空间</li>
+</ol>
+<h4 id="地址变换"><a href="#地址变换" class="headerlink" title="地址变换"></a>地址变换</h4><p>​	虚拟地址到物理地址的变换，是硬件关系，但是是按照操作系统的要求，操作系统规定了地址变换的规则</p>
+<h3 id="3-2-程序的执行"><a href="#3-2-程序的执行" class="headerlink" title="3.2 程序的执行"></a>3.2 程序的执行</h3><p> 程序的执行其实是&#x3D;&#x3D;指令流&#x3D;&#x3D;的执行。</p>
+<p>从人的角度来说，程序可以有顺序，循环，条件，子程序等，但是从<strong>CPU</strong>角度来说，指令其实就是程序计数器PC的不断前进。</p>
+<p>指令流的&#x3D;&#x3D;连续性&#x3D;&#x3D;，一般可以指一条指令的执行结果往往是后一条指令的输入，比如两数相加后，数据留在寄存器中，以便于下一条指令使用。</p>
+<p>指令流的&#x3D;&#x3D;运行环境&#x3D;&#x3D;是指&#x3D;&#x3D;上一条指令留下的全部信息，CPU寄存器的信息，内存以及设备的信息等&#x3D;&#x3D;</p>
+<p>异常一般有&#x3D;&#x3D;溢出，除数为0，非法访问内存&#x3D;&#x3D;等。通过CPU检测并发出警告。</p>
+<p>可以简单的将异常分为<strong>可修复</strong>的和<strong>不可修复</strong>的：</p>
+<p>​	<strong>可修复的异常</strong>：除数为0时的异常，可以将结果用NaN表示（Not a Number）；页错误的异常，可以通过页置换处理。</p>
+<p>​	<strong>不可修复的异常</strong>：“整数运算中除数为0，这意味着<strong>程序中的逻辑错误</strong> 或 非法操作码、地址越界”一般直接终止程序的运行。</p>
+<p>🖐🖐ppt上说，“除数为0，处理方法：将指令的执行结果用特殊的值表示，如NaN(Not a Number)，继续执行”，这是&#x3D;&#x3D;可修复的异常&#x3D;&#x3D;，不过在&#x3D;&#x3D;不可修复&#x3D;&#x3D;的异常中，也有“整数运算中除数为0，这意味着<strong>程序中的逻辑错误</strong>”这种，都是除数为零，需要判断一下是不是逻辑出现了错误。如果逻辑错误则终止执行。</p>
+<p><code>try&#123;……&#125;, catch()&#123;……&#125;</code>也是处理异常的代码</p>
+<p>•**&#x3D;&#x3D;UNIVAC&#x3D;&#x3D;计算机处理异常的方式**</p>
+<p>​	用户程序执行前在0号单元存放一对指令；一旦出现异常，CPU暂停当前的指令执行序列,转去执行0号单元中的那两条指令;这两条指令可能会去执行另外的程序，也可能不发生转移而继续执行原先的指令序列，这由程序员设计决定</p>
+<p><strong>• 异常处理的意义</strong></p>
+<p>​	CPU可以执行多个不同的代码序列，从容地在多个代码序列之间进行切换</p>
+<p>陷入（trap）是人为主动寻求帮助，比如&#x3D;&#x3D;断点调试 int 3指令&#x3D;&#x3D;和&#x3D;&#x3D;系统调用 trap指令&#x3D;&#x3D;</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/niuyisheng/article/details/9159895">int 3指令相关链接</a></p>
+<img src="/2023/06/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E5%B0%8F%E6%8F%90%E7%BA%B2/image-20230115163340269.png" class="" title="image-20230115163340269">
+
+<p>中断与子程序调用实际上很相似，但是指令不同，运行环境不同，完成的任务不同，而且&#x3D;&#x3D;防止遭到破坏&#x3D;&#x3D;。</p>
+<h3 id="3-3-中断响应"><a href="#3-3-中断响应" class="headerlink" title="3.3 中断响应"></a>3.3 中断响应</h3><h3 id="3-4-运行时系统"><a href="#3-4-运行时系统" class="headerlink" title="3.4 运行时系统"></a>3.4 运行时系统</h3><h3 id="3-5-系统调用"><a href="#3-5-系统调用" class="headerlink" title="3.5 系统调用"></a>3.5 系统调用</h3><h3 id="3-6-程序的终止"><a href="#3-6-程序的终止" class="headerlink" title="3.6 程序的终止"></a>3.6 程序的终止</h3><p>第五章部分内容：</p>
+<p><strong>扩展</strong>：</p>
+<p>　　长期调度(long-term scheduling)又叫做高级调度(High-level scheduling)或作业调度(job scheduling),  负责决定在系统中， 允许哪些进程主动竞争系统资源。 这个级别有时也称为准入调度， 因为决定了多道程序设计的道数， 也就是在一个给定的时刻，  系统中的进程总数。 太多的进程进入到系统， 可能使系统资源饱和， 造成性能降低。 在这种情况下， 高级调度策略可以决定临时性地禁止新作业进入，  直到其他作业完成。</p>
+<p>　　中期调度(medium-term scheduling)又叫做中级调度(intermediate-level scheduling)，  一个作业被长期调度策略准许进入到系统之后， 将由中期调度策略决定允许哪些进程竞争处理器。 该策略要相应系统负荷的短期波动。 系统超载时，  中期调度程序可以禁止进程进入短期调度； 当系统恢复正常时， 则允许这些进程继续。</p>
+<p>　　短期调度(short-term scheduling)又叫做低级调度(low-level scheduling), 决定了在有一个可用的处理器时， 系统将哪个处于就绪状态的进程分配给该处理器。</p>
+<p>　　在当今的系统中， 短期和中期调度程序是唯一的调度程序（在这种情况下， 作业初始化由中期调度程序执行）. 长期调度程序通常只有执行批处理的大型主机系统才会采用。</p>
+<p>　　短期调度策略通常为每个进程都分配一个优先级， 这个优先级反映了进程的重要性——进程越重要， 月容易被调度策略选中成为下一个要执行的进程。  短期调度程序（也成为分派程序(dispatcher)还要将一个处理器分配给选中的进程。 分派程序每秒钟要工作许多次，  所以始终都存在与主内存当中。</p>
+<h2 id="第八章-文件系统"><a href="#第八章-文件系统" class="headerlink" title="第八章 文件系统"></a>第八章 文件系统</h2><h3 id="8-1-文件"><a href="#8-1-文件" class="headerlink" title="8.1 文件"></a>8.1 文件</h3><p>文件是由&#x3D;&#x3D;操作系统&#x3D;&#x3D;管理的，在&#x3D;&#x3D;外存&#x3D;&#x3D;上的，数据的逻辑单元。</p>
+<p>访问外存的方式是&#x3D;&#x3D;按名存取&#x3D;&#x3D;，文件有名字和数据，只关心存入什么和取出什么。</p>
+<p>文件的逻辑结构是程序猿看到的文件组织形式，是对外存的抽象表示；而<strong>物理结构</strong>是指文件的存放方式，程序看不到。</p>
+<p>逻辑结构可以有<strong>记录结构，索引结构，字节流结构等</strong></p>
+<p>文件由{&#x3D;&#x3D;文件名&#x3D;&#x3D;；&#x3D;&#x3D;文件控制块FCB&#x3D;&#x3D;（描述部分，文件的属性如文件位置、文件大小、建立日期、访问权限等）；&#x3D;&#x3D;数据部分&#x3D;&#x3D;}</p>
+<p>文件类型可以从：</p>
+<ol>
+<li>逻辑结构：有字节流、记录结构的区分</li>
+<li>从操作系统管理的角度：普通文件、目录文件、设备文件</li>
+<li>从应用层面：.doc、.pdf、.xls 等</li>
+</ol>
+<p>文件的访问不仅有<strong>打开</strong>、<strong>关闭</strong>、<strong>读</strong>、写，还有<strong>插入</strong>、<strong>删除</strong>、<strong>移动读写指针等</strong>…</p>
+<p>可以顺序访问，随机访问（按照地址访问，也就是按照字节编制的&#x3D;&#x3D;偏移量&#x3D;&#x3D;），或者指定读写位置，按照当前的<strong>读写指针</strong></p>
+<h3 id="8-2-文件的存储结构"><a href="#8-2-文件的存储结构" class="headerlink" title="8.2 文件的存储结构"></a>8.2 文件的存储结构</h3><h4 id="文件存储器"><a href="#文件存储器" class="headerlink" title="文件存储器"></a>文件存储器</h4><p>磁盘——随机访问</p>
+<p>磁带——顺序访问</p>
+<p>固态硬盘（SSD）——随机访问</p>
+<h4 id="逻辑块号到物理块号的映射"><a href="#逻辑块号到物理块号的映射" class="headerlink" title="逻辑块号到物理块号的映射"></a>逻辑块号到物理块号的映射</h4><p>&#x3D;&#x3D;块&lt; &#x3D;&#x3D; &gt;扇区&#x3D;&#x3D;</p>
+<h4 id="连续分配"><a href="#连续分配" class="headerlink" title="连续分配"></a>连续分配</h4><h4 id="链接分配"><a href="#链接分配" class="headerlink" title="链接分配"></a>链接分配</h4><h4 id="索引分配"><a href="#索引分配" class="headerlink" title="索引分配"></a>索引分配</h4></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">MrGoddess</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2023/06/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E5%B0%8F%E6%8F%90%E7%BA%B2/">http://example.com/2023/06/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E5%B0%8F%E6%8F%90%E7%BA%B2/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">MrGoddess's Little house</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/notes/">notes</a></div><div class="post_share"><div class="social-share" data-image="/img/img1.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/06/21/%E5%B1%B1%E4%B8%9C%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%AF%BE%E8%AE%BE/" title="山东大学计算机组成与设计课设"><img class="cover" src="/img/img4.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">山东大学计算机组成与设计课设</div></div></a></div><div class="next-post pull-right"><a href="/2023/05/13/%E5%B1%B1%E4%B8%9C%E5%A4%A7%E5%AD%A6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AF%BE%E8%AE%BE/" title="山东大学操作系统课设"><img class="cover" src="/img/img8.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">山东大学操作系统课设</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/03/26/C-1/" title="C++"><img class="cover" src="/img/img3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-03-26</div><div class="title">C++</div></div></a></div><div><a href="/2023/06/21/%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B0%8F%E8%80%83%E7%82%B9/" title="可视化小考点"><img class="cover" src="/img/img3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-06-21</div><div class="title">可视化小考点</div></div></a></div><div><a href="/2023/06/21/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E5%B0%8F%E8%80%83%E7%82%B9/" title="编译原理小考点"><img class="cover" src="/img/img3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-06-21</div><div class="title">编译原理小考点</div></div></a></div><div><a href="/2023/04/03/%E8%AE%A1%E7%BB%84%E5%A4%8D%E4%B9%A0/" title="计组复习"><img class="cover" src="/img/img3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-03</div><div class="title">计组复习</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">MrGoddess</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/mrgoddessli"><i class="fab fa-github"></i><span>👀❕❕❕</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/mrgoddessli" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:mrgoddessli@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=215381250&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#10-4-%E5%89%8D%E5%9B%9B%E7%AB%A0%E5%A4%8D-yu-%E4%B9%A0-xi"><span class="toc-number">1.</span> <span class="toc-text">10.4 前四章复(yu)习(xi)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84%EF%BC%88%E5%A6%82%E4%BB%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E6%9E%B6%E6%9E%84%E9%80%90%E6%B8%90%E5%8F%91%E5%B1%95%E8%B5%B7%E6%9D%A5%E7%9A%84%E5%8E%86%E5%8F%B2%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">第一章. 计算机体系架构（如今计算机体系架构逐渐发展起来的历史）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%9B%BE%E7%81%B5%E6%9C%BA"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. 图灵机</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%94%B5%E5%AD%90%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E8%AF%9E%E7%94%9F"><span class="toc-number">1.1.2.</span> <span class="toc-text">2. 电子计算机的诞生</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%AD%98%E5%82%A8%E7%A8%8B%E5%BA%8F%E8%AE%A1%E7%AE%97%E6%9C%BA"><span class="toc-number">1.1.3.</span> <span class="toc-text">3. 存储程序计算机</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%8C%87%E4%BB%A4%E9%9B%86%E6%9E%B6%E6%9E%84"><span class="toc-number">1.1.4.</span> <span class="toc-text">4. 指令集架构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ISA%E7%9A%84%E5%8F%91%E5%B1%95"><span class="toc-number">1.1.4.1.</span> <span class="toc-text">ISA的发展</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RISC-V"><span class="toc-number">1.1.4.2.</span> <span class="toc-text">RISC-V</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%B9%E6%9D%83%E6%8C%87%E4%BB%A4"><span class="toc-number">1.1.4.3.</span> <span class="toc-text">特权指令</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.2.</span> <span class="toc-text">第二章 程序设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.2.1.</span> <span class="toc-text">1. 一个简单的程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%86%85%E5%AD%98%E8%AE%BF%E9%97%AE"><span class="toc-number">1.2.2.</span> <span class="toc-text">2. 内存访问</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%9C%B0%E5%9D%80"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">物理地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%99%9A%E6%8B%9F%E5%9C%B0%E5%9D%80%E4%B8%8E%E8%99%9A%E6%8B%9F%E5%9C%B0%E5%9D%80%E7%A9%BA%E9%97%B4"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">虚拟地址与虚拟地址空间</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%87%8D%E5%AE%9A%E4%BD%8D%EF%BC%9A%E4%BF%AE%E6%94%B9%E5%9C%B0%E5%9D%80%E2%80%94%E2%80%94%E6%98%AF%E5%B0%86%E7%A8%8B%E5%BA%8F%E5%86%85%E9%9C%80%E8%A6%81%E7%9A%84%E5%9C%B0%E5%9D%80%E8%BF%9B%E8%A1%8C%E4%BF%AE%E6%94%B9"><span class="toc-number">1.2.2.3.</span> <span class="toc-text">重定位：修改地址——是将程序内需要的地址进行修改</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%A4%96%E5%AD%98%E8%AE%BF%E9%97%AE"><span class="toc-number">1.2.3.</span> <span class="toc-text">3. 外存访问</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#IO%E8%AE%BE%E5%A4%87"><span class="toc-number">1.2.3.1.</span> <span class="toc-text">IO设备</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E5%A4%87%E6%8E%A7%E5%88%B6%E5%99%A8"><span class="toc-number">1.2.3.2.</span> <span class="toc-text">设备控制器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E5%A4%87%E7%9A%84%E5%9C%B0%E5%9D%80"><span class="toc-number">1.2.3.3.</span> <span class="toc-text">设备的地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E5%A4%87%E6%8E%A7%E5%88%B6%E6%96%B9%E5%BC%8F"><span class="toc-number">1.2.3.4.</span> <span class="toc-text">设备控制方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A9%B1%E5%8A%A8%E7%A8%8B%E5%BA%8F%EF%BC%9A%E7%9B%B4%E6%8E%A5%E6%8E%A7%E5%88%B6%E8%AE%BE%E5%A4%87%E7%9A%84%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.2.3.5.</span> <span class="toc-text">驱动程序：直接控制设备的程序</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%AD%90%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="toc-number">1.2.4.</span> <span class="toc-text">4. 子程序设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E8%BF%90%E8%A1%8C%E6%A0%88"><span class="toc-number">1.2.5.</span> <span class="toc-text">5. 运行栈</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#x3D-x3D-%E8%BF%90%E8%A1%8C%E6%A0%88-x3D-x3D"><span class="toc-number">1.2.5.1.</span> <span class="toc-text">&#x3D;&#x3D;运行栈&#x3D;&#x3D;</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80"><span class="toc-number">1.2.6.</span> <span class="toc-text">6. 程序设计语言</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%BA%E5%99%A8%E8%AF%AD%E8%A8%80%E3%80%81%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%81%E9%AB%98%E7%BA%A7%E8%AF%AD%E8%A8%80"><span class="toc-number">1.2.6.1.</span> <span class="toc-text">机器语言、汇编语言、高级语言</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E8%BD%AC%E6%8D%A2"><span class="toc-number">1.2.6.2.</span> <span class="toc-text">代码转换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E6%97%B6%E7%B3%BB%E7%BB%9F-VS-%E7%A8%8B%E5%BA%8F%E5%BA%93"><span class="toc-number">1.2.6.3.</span> <span class="toc-text">运行时系统 VS 程序库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E8%AF%AD%E8%A8%80"><span class="toc-number">1.2.6.4.</span> <span class="toc-text">脚本语言</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E7%A8%8B%E5%BA%8F%E7%9A%84%E9%93%BE%E6%8E%A5"><span class="toc-number">1.2.7.</span> <span class="toc-text">7. 程序的链接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E7%A8%8B%E5%BA%8F%E7%9A%84%E8%BF%90%E8%A1%8C"><span class="toc-number">1.3.</span> <span class="toc-text">第三章 程序的运行</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%A8%8B%E5%BA%8F%E7%9A%84%E8%A3%85%E5%85%A5"><span class="toc-number">1.3.1.</span> <span class="toc-text">1. 程序的装入</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%B0%E5%9D%80%E5%8F%98%E6%8D%A2"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">地址变换</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E7%A8%8B%E5%BA%8F%E7%9A%84%E6%89%A7%E8%A1%8C"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 程序的执行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E4%B8%AD%E6%96%AD%E5%93%8D%E5%BA%94"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.3 中断响应</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-%E8%BF%90%E8%A1%8C%E6%97%B6%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.3.4.</span> <span class="toc-text">3.4 运行时系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8"><span class="toc-number">1.3.5.</span> <span class="toc-text">3.5 系统调用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-%E7%A8%8B%E5%BA%8F%E7%9A%84%E7%BB%88%E6%AD%A2"><span class="toc-number">1.3.6.</span> <span class="toc-text">3.6 程序的终止</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.4.</span> <span class="toc-text">第八章 文件系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8-1-%E6%96%87%E4%BB%B6"><span class="toc-number">1.4.1.</span> <span class="toc-text">8.1 文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-2-%E6%96%87%E4%BB%B6%E7%9A%84%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84"><span class="toc-number">1.4.2.</span> <span class="toc-text">8.2 文件的存储结构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%AD%98%E5%82%A8%E5%99%A8"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">文件存储器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E5%9D%97%E5%8F%B7%E5%88%B0%E7%89%A9%E7%90%86%E5%9D%97%E5%8F%B7%E7%9A%84%E6%98%A0%E5%B0%84"><span class="toc-number">1.4.2.2.</span> <span class="toc-text">逻辑块号到物理块号的映射</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9E%E7%BB%AD%E5%88%86%E9%85%8D"><span class="toc-number">1.4.2.3.</span> <span class="toc-text">连续分配</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5%E5%88%86%E9%85%8D"><span class="toc-number">1.4.2.4.</span> <span class="toc-text">链接分配</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E5%88%86%E9%85%8D"><span class="toc-number">1.4.2.5.</span> <span class="toc-text">索引分配</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/06/21/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E5%B0%8F%E8%80%83%E7%82%B9/" title="编译原理小考点"><img src="/img/img3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="编译原理小考点"/></a><div class="content"><a class="title" href="/2023/06/21/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86%E5%B0%8F%E8%80%83%E7%82%B9/" title="编译原理小考点">编译原理小考点</a><time datetime="2023-06-21T14:39:00.000Z" title="发表于 2023-06-21 22:39:00">2023-06-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/21/%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B0%8F%E8%80%83%E7%82%B9/" title="可视化小考点"><img src="/img/img3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="可视化小考点"/></a><div class="content"><a class="title" href="/2023/06/21/%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B0%8F%E8%80%83%E7%82%B9/" title="可视化小考点">可视化小考点</a><time datetime="2023-06-21T14:34:00.000Z" title="发表于 2023-06-21 22:34:00">2023-06-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/21/%E5%B1%B1%E4%B8%9C%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%AF%BE%E8%AE%BE/" title="山东大学计算机组成与设计课设"><img src="/img/img4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="山东大学计算机组成与设计课设"/></a><div class="content"><a class="title" href="/2023/06/21/%E5%B1%B1%E4%B8%9C%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E4%B8%8E%E8%AE%BE%E8%AE%A1%E8%AF%BE%E8%AE%BE/" title="山东大学计算机组成与设计课设">山东大学计算机组成与设计课设</a><time datetime="2023-06-21T14:31:50.000Z" title="发表于 2023-06-21 22:31:50">2023-06-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E5%B0%8F%E6%8F%90%E7%BA%B2/" title="操作系统复习小提纲"><img src="/img/img1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="操作系统复习小提纲"/></a><div class="content"><a class="title" href="/2023/06/21/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%A4%8D%E4%B9%A0%E5%B0%8F%E6%8F%90%E7%BA%B2/" title="操作系统复习小提纲">操作系统复习小提纲</a><time datetime="2023-06-21T14:22:07.000Z" title="发表于 2023-06-21 22:22:07">2023-06-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/05/13/%E5%B1%B1%E4%B8%9C%E5%A4%A7%E5%AD%A6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AF%BE%E8%AE%BE/" title="山东大学操作系统课设"><img src="/img/img8.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="山东大学操作系统课设"/></a><div class="content"><a class="title" href="/2023/05/13/%E5%B1%B1%E4%B8%9C%E5%A4%A7%E5%AD%A6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AF%BE%E8%AE%BE/" title="山东大学操作系统课设">山东大学操作系统课设</a><time datetime="2023-05-13T09:42:54.000Z" title="发表于 2023-05-13 17:42:54">2023-05-13</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By MrGoddess</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
